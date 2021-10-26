@@ -89,6 +89,7 @@ h1 {
 }
 h1,
 h2,
+h3,
 a {
 	color: var(--text-clr-1);
 	text-transform: capitalize;
@@ -97,13 +98,15 @@ a {
 
 h1,
 h2,
+h3,
 p {
 	-webkit-user-select: none;
 	user-select: none;
 }
 
 h1,
-h2 {
+h2,
+h3 {
 	font-family: var(--bold-font);
 }
 

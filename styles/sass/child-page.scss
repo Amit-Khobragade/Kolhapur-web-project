@@ -1,0 +1,44 @@
+@use "./global.scss";
+@use "./navbar.scss";
+@use "./page-defaults.scss";
+
+#navbar {
+	z-index: 1500;
+}
+
+.place {
+	&--img {
+		height: 75vh;
+		border-radius: var(--border-radius);
+	}
+
+	&--fig {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+}
+
+#map--parent {
+	min-width: 320px;
+	padding: var(--default-padding-2);
+	position: relative;
+	width: 100%;
+
+	a.btn {
+		background: hsl(var(--bg-clr-1));
+		clip-path: polygon(100% 0, 86% 53%, 100% 100%, 0% 100%, 0 45%, 0% 0%);
+		padding-right: 2rem;
+		position: absolute;
+		bottom: 3rem;
+		left: 0.5rem;
+		z-index: 500;
+	}
+}
+
+#map {
+	border-radius: var(--border-radius);
+	margin: 0 auto;
+	height: 50vh;
+	width: 90%;
+	// z-index: -1;
+}
