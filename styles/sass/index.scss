@@ -12,6 +12,13 @@
 	justify-content: space-between;
 	padding: 1rem;
 	width: 100%;
+	z-index: 10;
+
+	&.fixed {
+		background: hsla(var(--bg-clr-1), 0.75);
+		position: fixed;
+		top: 0;
+	}
 
 	> ul {
 		background: hsl(var(--bg-clr-2));

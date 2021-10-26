@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 :root {
-  --bg-clr-1: 140deg 71% 44%;
+  --bg-clr-1: 140, 71%, 44%;
   --bg-clr-2: 220deg 100% 80%;
   --bg-clr-3: 240deg 100% 96%;
   --bg-clr-4: 338deg 13% 38%;
@@ -160,6 +160,12 @@ a {
   justify-content: space-between;
   padding: 1rem;
   width: 100%;
+  z-index: 10;
+}
+#navbar.fixed {
+  background: hsla(var(--bg-clr-1), 0.75);
+  position: fixed;
+  top: 0;
 }
 #navbar > ul {
   background: hsl(var(--bg-clr-2));
