@@ -188,6 +188,16 @@ a {
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 600px) {
+  #navbar {
+    justify-content: center;
+    text-align: center;
+  }
+  #navbar > ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
 header {
   color: var(--text-clr-1);
   width: 100%;
@@ -234,17 +244,6 @@ footer > h1 {
 
 .highlight {
   color: var(--text-clr-4);
-}
-
-@media screen and (max-width: 600px) {
-  #navbar {
-    justify-content: center;
-    text-align: center;
-  }
-  #navbar > ul {
-    margin: 0 auto;
-    padding: 0;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
