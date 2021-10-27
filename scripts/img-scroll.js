@@ -74,8 +74,10 @@ document.addEventListener("keydown", e => {
 
 const setContainerHeight = height => (imgConatiner.style.height = `${height}`);
 
-setContainerHeight(`${imgDiv.getCurrentImg().height}px`);
-
 window.addEventListener("resize", e =>
 	setContainerHeight(`${imgDiv.getCurrentImg().height}px`)
 );
+
+window.addEventListener("load", e => {
+	setContainerHeight(`${imgDiv.getCurrentImg().height}px`);
+});
