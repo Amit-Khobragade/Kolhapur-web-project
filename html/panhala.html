@@ -16,13 +16,14 @@
 		/>
 
 		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
 		<script
 			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 			crossorigin=""
 			defer
 		></script>
-		<script src="../scripts/navbar.js" defer></script>
 		<script src="../scripts/maps.js" defer></script>
 	</head>
 
@@ -43,21 +44,60 @@
 				</ul>
 			</nav>
 			<figure class="place--fig">
-				<picture>
-					<source
-						media="(max-width: 500px)"
-						srcset="../images/Panhala-fort/640px-Panhala_fort-1.jpg"
-					/>
-					<source
-						media="(max-width: 2000px)"
-						srcset="../images/Panhala-fort/2180px-Panhala_fort-1.jpg"
-					/>
-					<img
-						src="../images/Panhala-fort/1280px-Panhala_fort-1.jpg"
-						alt="fort"
-						class="place--img"
-					/>
-				</picture>
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Panhala-fort/640px-Panhala_fort-1.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Panhala-fort/2180px-Panhala_fort-1.jpg"
+						/>
+						<img
+							src="../images/Panhala-fort/1280px-Panhala_fort-1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Panhala-fort/600px-panhala-fort-2.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Panhala-fort/2500px-panhala-fort-2.jpg"
+						/>
+						<img
+							src="../images/Panhala-fort/1200px-panhala-fort-2.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Panhala-fort/600px-Fort_Panhala-3.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Panhala-fort/2500px-Fort_Panhala-3.jpg"
+						/>
+						<img
+							src="../images/Panhala-fort/1200px-Fort_Panhala-3.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
 				<figcaption class="place--name">
 					<h1>Panhala Fort</h1>
 				</figcaption>
